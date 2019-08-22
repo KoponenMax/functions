@@ -49,3 +49,17 @@ ask(
 let ask = (question, yes, no) => (confirm(question))? yes() : no ();
 ask("solasni??", () => alert("Da"), () => alert("otmena")); 
 
+
+
+4) Напишите функцию, которая принимает строку и букву,которую необходимо найти, в качестве аргументов , и возвращает количество символов char , содержащихся в строке
+
+function countChar(str, char){
+  let count = '';
+  
+  for (N = 0; N < str.length; N++){
+    if (str.charAt(N) == char){
+      count = count + char;
+        }
+   }
+    return count.length;  
+}
